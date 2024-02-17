@@ -1,3 +1,4 @@
 service : {
-    "greet": (text) -> (text) query;
+    "decrypt": (input :text,base64_image: text) -> text;
+    "encrypt" : (input: text, base64_image: text) -> text;
 }
