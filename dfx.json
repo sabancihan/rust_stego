@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "rust_stego_backend": {
+      "candid": "src/rust_stego_backend/rust_stego_backend.did",
+      "declarations": {
+        "node_compatibility": true
+      },
+      "package": "rust_stego_backend",
+      "type": "rust"
+    },
+    "rust_stego_frontend": {
+      "dependencies": [
+        "rust_stego_backend"
+      ],
+      "source": [
+        "src/rust_stego_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "rust_stego_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
